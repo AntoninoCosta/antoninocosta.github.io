@@ -259,6 +259,25 @@ body {
     align-items: center;
 }
 
+/* Desktop: narrow the image column and pull the photo flush left, so the
+   remaining width goes to the text instead of to padding around the photo.
+   Scoped to min-width 769px so the stacked mobile layout keeps 100% / centred. */
+@media (min-width: 769px) {
+    .about-section .about-image-container {
+        flex: 0 0 320px;
+        align-items: flex-start;
+        align-self: flex-start;
+        padding-left: 1.5rem;
+    }
+
+    /* basis 0, not auto: with `auto` the paragraphs' max-content width is used
+       to decide wrapping, which pushes this column onto its own line. */
+    .about-section .about-text {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+}
+
 .about-image {
     width: 100%;
     max-width: 350px;
