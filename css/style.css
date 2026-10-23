@@ -3,13 +3,13 @@
    ======================================== */
 
 :root {
-    --color-brown: rgb(153, 102, 0);
-    --color-dark-blue: rgb(0, 51, 102);
+    --color-brown: #DDA52D;
+    --color-dark-blue: #69246B;
     --color-white: white;
     --color-light-gray: #f8f9fa;
     --color-border: #e0e0e0;
-    --color-light-brown: rgba(153, 102, 0, 0.05);
-    --color-dark-blue-light: rgba(0, 51, 102, 0.05);
+    --color-light-brown: rgba(221, 165, 45, 0.05);
+    --color-dark-blue-light: rgba(105, 36, 107, 0.05);
     --spacing-unit: 1rem;
     --transition: all 0.3s ease;
     --box-shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -804,7 +804,7 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: rgb(122, 81, 0);
+    background-color: rgb(174, 123, 31);
     box-shadow: var(--box-shadow-medium);
     transform: translateY(-3px);
 }
